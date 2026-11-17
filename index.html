@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Princess Day, Princess Vrityy 👑</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Great Vibes, Playfair Display, Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blush: {
+                            50: '#FFF8FA',
+                            100: '#FFF0F5',
+                            200: '#FFE0EC',
+                            300: '#FFD1DC',
+                            400: '#FFB3C6',
+                            500: '#FF8FA3',
+                        },
+                        royal: {
+                            gold: '#D4AF37',
+                            goldLight: '#F7E7CE',
+                            goldDark: '#AA8220',
+                            roseGold: '#E0BFB8',
+                            velvet: '#4A152C',
+                            plum: '#6B2142',
+                        }
+                    },
+                    fontFamily: {
+                        script: ['"Great Vibes"', 'cursive'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Poppins"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'gold': '0 10px 30px -5px rgba(212, 175, 55, 0.35)',
+                        'gold-glow': '0 0 25px rgba(212, 175, 55, 0.6)',
+                        'rose-soft': '0 15px 35px -10px rgba(74, 21, 44, 0.12)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Royal Aesthetics & Animations */
+        body {
+            background: linear-gradient(180deg, #FFF0F5 0%, #FFE6EE 35%, #FFF5F8 70%, #FDE8EF 100%);
+            color: #4A152C;
+            overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Golden Shimmer Text */
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #AA8220 0%, #D4AF37 30%, #F3D06B 50%, #D4AF37 70%, #997118 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 4s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Fairy Lights String */
+        .fairy-lights-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45px;
+            z-index: 40;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .fairy-wire {
+            position: absolute;
+            top: -12px;
+            left: -5%;
+            width: 110%;
+            height: 28px;
+            border-bottom: 1.5px solid rgba(170, 130, 32, 0.45);
+            border-radius: 50%;
+        }
+
+        .fairy-bulb {
+            position: absolute;
+            width: 10px;
+            height: 14px;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            background: #FFF6D6;
+            box-shadow: 0 0 8px 2px #FFD700, 0 0 18px 5px rgba(255, 192, 203, 0.6);
+            animation: twinkle var(--duration, 2.5s) ease-in-out infinite alternate;
+            animation-delay: var(--delay, 0s);
+        }
+
+        .fairy-bulb::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 3px;
+            width: 4px;
+            height: 4px;
+            background: #997118;
+            border-radius: 1px;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.45;
+                transform: scale(0.88);
+                box-shadow: 0 0 4px 1px #FFD700;
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.12);
+                box-shadow: 0 0 12px 4px #FFD700, 0 0 24px 8px rgba(255, 215, 0, 0.45);
+            }
+        }
+
+        /* Floating Crown Animation */
+        .float-gentle {
+            animation: floatGentle 4s ease-in-out infinite;
+        }
+
+        @keyframes floatGentle {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
+        }
+
+        /* Royal Frame Styling */
+        .royal-frame {
+            background: linear-gradient(145deg, #ffffff 0%, #FFF9FB 100%);
+            border: 2px solid #D4AF37;
+            box-shadow: 0 12px 28px rgba(74, 21, 44, 0.09), inset 0 0 0 4px #FFF0F5, inset 0 0 0 5px rgba(212, 175, 55, 0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .royal-frame:hover {
+            transform: translateY(-6px) scale(1.015);
+            box-shadow: 0 20px 35px rgba(212, 175, 55, 0.28), inset 0 0 0 4px #FFF0F5, inset 0 0 0 6px #D4AF37;
+        }
+
+        /* Envelope Wax Seal Animation */
+        .envelope-card {
+            background: linear-gradient(135deg, #FFF8FA 0%, #FFE4EE 100%);
+            border: 1.5px solid #E0BFB8;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.35s ease;
+        }
+
+        .envelope-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 55%;
+            background: linear-gradient(180deg, rgba(255, 209, 220, 0.65) 0%, rgba(255, 240, 245, 0) 100%);
+            clip-path: polygon(0 0, 50% 65%, 100% 0);
+            pointer-events: none;
+        }
+
+        .wax-seal {
+            background: radial-gradient(circle at 30% 30%, #F3D06B, #D4AF37 55%, #997118 100%);
+            box-shadow: 0 4px 12px rgba(153, 113, 24, 0.45), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .envelope-card:hover .wax-seal {
+            transform: scale(1.12) rotate(8deg);
+        }
+
+        /* Flower Bloom Animation */
+        .bloom-pop {
+            animation: bloomPop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes bloomPop {
+            0% { transform: scale(0.4) rotate(-12deg); opacity: 0; }
+            70% { transform: scale(1.08) rotate(3deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        /* Parchment Texture for Modals */
+        .parchment-bg {
+            background-color: #FFFDF9;
+            background-image: radial-gradient(#E0BFB8 0.5px, transparent 0.5px), radial-gradient(#F7E7CE 0.5px, #FFFDF9 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF0F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E0BFB8;
+            border-radius: 999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blush-300 selection:text-royal-velvet">
+
+    <!-- Falling Petals & Sparkles Canvas -->
+    <canvas id="petalsCanvas" class="fixed inset-0 pointer-events-none z-30"></canvas>
+
+    <!-- Twinkling Fairy Lights along top -->
+    <div id="fairyLights" class="fairy-lights-container" aria-hidden="true"></div>
+
+    <!-- Top Floating Music & Memory Controls -->
+    <header class="fixed top-7 right-4 z-50 flex items-center gap-2">
+        <button id="musicToggleBtn" onclick="toggleRoyalMusic()" class="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/85 backdrop-blur-md border border-royal-gold/50 shadow-gold text-xs sm:text-sm font-medium text-royal-velvet hover:bg-blush-100 transition active:scale-95" title="Toggle Royal Music Box">
+            <span id="musicIcon" class="text-base">🎵</span>
+            <span id="musicLabel" class="hidden sm:inline">Play Melody</span>
+        </button>
+    </header>
+
+    <!-- Toast Notification Banner -->
+    <div id="toastBanner" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 transition-all duration-300 transform translate-y-4">
+        <div class="px-5 py-2.5 rounded-full bg-royal-velvet text-blush-100 border border-royal-gold shadow-gold text-xs sm:text-sm font-medium flex items-center gap-2 whitespace-nowrap">
+            <span>✨</span>
+            <span id="toastText">Saved to your royal memory book!</span>
+        </div>
+    </div>
+
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-16 text-center overflow-hidden">
+        <!-- Decorative Soft Radial Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[550px] h-[320px] sm:h-[550px] bg-blush-300/40 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 right-10 w-64 h-64 bg-royal-goldLight/60 rounded-full blur-3xl -z-10"></div>
+
+        <!-- Crown Emblem -->
+        <div class="float-gentle mb-4 inline-flex flex-col items-center">
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-white via-blush-100 to-royal-goldLight border-2 border-royal-gold shadow-gold flex items-center justify-center mb-3">
+                <!-- Custom SVG Royal Crown -->
+                <svg class="w-12 h-12 sm:w-14 sm:h-14" viewBox="0 0 64 64" fill="none">
+                    <path d="M8 46L4 20L19 31L32 12L45 31L60 20L56 46H8Z" fill="url(#crownGrad)" stroke="#997118" stroke-width="2" stroke-linejoin="round"/>
+                    <rect x="8" y="48" width="48" height="6" rx="3" fill="url(#crownGrad)" stroke="#997118" stroke-width="1.5"/>
+                    <circle cx="32" cy="9" r="3" fill="#FF8FA3" stroke="#997118" stroke-width="1.2"/>
+                    <circle cx="4" cy="17" r="2.5" fill="#FFD1DC" stroke="#997118" stroke-width="1.2"/>
+                    <circle cx="60" cy="17" r="2.5" fill="#FFD1DC" stroke="#997118" stroke-width="1.2"/>
+                    <circle cx="32" cy="36" r="3.5" fill="#FF4D6D"/>
+                    <circle cx="19" cy="39" r="2.5" fill="#FFF0F5"/>
+                    <circle cx="45" cy="39" r="2.5" fill="#FFF0F5"/>
+                    <defs>
+                        <linearGradient id="crownGrad" x1="4" y1="12" x2="60" y2="54" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F7E7CE"/>
+                            <stop offset="0.5" stop-color="#D4AF37"/>
+                            <stop offset="1" stop-color="#AA8220"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span class="px-4 py-1 rounded-full bg-white/80 border border-royal-gold/40 text-xs uppercase tracking-[0.22em] text-royal-goldDark font-semibold shadow-sm">
+                Royal Proclamation • Princess Day
+            </span>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-royal-velvet leading-tight max-w-3xl">
+            Happy Princess Day,
+            <span class="block font-script text-5xl sm:text-7xl md:text-8xl font-normal gold-text-gradient py-2 mt-1">
+                Princess Vrityy 👑
+            </span>
+        </h1>
+
+        <!-- Heartfelt Subtitle mentioning Musii -->
+        <p class="mt-4 max-w-xl text-sm sm:text-base md:text-lg text-royal-plum/90 leading-relaxed font-normal px-2">
+            To my sweetest <span class="font-semibold text-royal-velvet bg-blush-200/80 px-2 py-0.5 rounded-md border border-royal-gold/30">Musii</span>, 
+            who turns every ordinary moment into a fairytale. No crown in the world shines brighter than your smile, and no kingdom is richer than my heart with you in it. ✨
+        </p>
+
+        <!-- Ornamental Divider -->
+        <div class="flex items-center justify-center gap-3 my-7 text-royal-gold">
+            <span class="h-[1px] w-14 sm:w-24 bg-gradient-to-r from-transparent to-royal-gold"></span>
+            <span class="text-lg">🌸 👑 🌸</span>
+            <span class="h-[1px] w-14 sm:w-24 bg-gradient-to-l from-transparent to-royal-gold"></span>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto px-4">
+            <a href="#flower-garden" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-royal-goldDark via-royal-gold to-royal-goldDark text-white font-medium text-sm sm:text-base shadow-gold hover:shadow-gold-glow transition transform hover:-translate-y-0.5 active:scale-95 flex items-center justify-center gap-2">
+                <span>Open Your Royal Scroll</span>
+                <span>✨</span>
+            </a>
+            <a href="#memory-gallery" class="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white/90 text-royal-velvet border border-royal-gold/60 font-medium text-sm sm:text-base hover:bg-blush-100 transition active:scale-95 flex items-center justify-center gap-2">
+                <span>Our 10 Frames</span>
+                <span>📸</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== 2. INTERACTIVE FLOWER GARDEN & BOUQUET ==================== -->
+    <section id="flower-garden" class="py-16 sm:py-24 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-royal-goldDark font-semibold">For My Favorite Blossom</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royal-velvet mt-1">
+                A Royal Garden for <span class="font-script text-4xl sm:text-5xl text-royal-goldDark">Chanaa & Musii</span> 💐
+            </h2>
+            <p class="text-sm sm:text-base text-royal-plum/85 max-w-lg mx-auto mt-2">
+                Tap each flower below to watch it bloom and reveal why every petal reminds me of you.
+            </p>
+        </div>
+
+        <!-- Flower Selector Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
+            <!-- Sunflower Card -->
+            <button onclick="bloomFlower('sunflower')" class="group p-6 rounded-3xl bg-white/85 backdrop-blur-sm border-2 border-blush-300 hover:border-royal-gold shadow-rose-soft hover:shadow-gold transition text-center flex flex-col items-center active:scale-95">
+                <div class="w-20 h-20 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                    <!-- Custom SVG Sunflower -->
+                    <svg class="w-14 h-14" viewBox="0 0 100 100">
+                        <g fill="#FFB703" stroke="#FB8500" stroke-width="1.5">
+                            <ellipse cx="50" cy="18" rx="7" ry="16"/>
+                            <ellipse cx="50" cy="82" rx="7" ry="16"/>
+                            <ellipse cx="18" cy="50" rx="16" ry="7"/>
+                            <ellipse cx="82" cy="50" rx="16" ry="7"/>
+                            <ellipse cx="27" cy="27" rx="7" ry="16" transform="rotate(-45 27 27)"/>
+                            <ellipse cx="73" cy="73" rx="7" ry="16" transform="rotate(-45 73 73)"/>
+                            <ellipse cx="73" cy="27" rx="7" ry="16" transform="rotate(45 73 27)"/>
+                            <ellipse cx="27" cy="73" rx="7" ry="16" transform="rotate(45 27 73)"/>
+                        </g>
+                        <circle cx="50" cy="50" r="18" fill="#5C3A21" stroke="#3D2514" stroke-width="2"/>
+                        <circle cx="45" cy="45" r="2" fill="#D4AF37" opacity="0.7"/>
+                        <circle cx="55" cy="46" r="2" fill="#D4AF37" opacity="0.7"/>
+                        <circle cx="50" cy="55" r="2" fill="#D4AF37" opacity="0.7"/>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-lg font-bold text-royal-velvet">Golden Sunflower 🌻</h3>
+                <p class="text-xs text-royal-plum/75 mt-1">Tap to bloom for my sunshine <strong>Chanaa</strong></p>
+            </button>
+
+            <!-- Lily Card -->
+            <button onclick="bloomFlower('lily')" class="group p-6 rounded-3xl bg-white/85 backdrop-blur-sm border-2 border-blush-300 hover:border-royal-gold shadow-rose-soft hover:shadow-gold transition text-center flex flex-col items-center active:scale-95">
+                <div class="w-20 h-20 rounded-full bg-pink-50 border border-pink-200 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                    <!-- Custom SVG Pink/White Lily -->
+                    <svg class="w-14 h-14" viewBox="0 0 100 100">
+                        <g stroke="#FF8FA3" stroke-width="1.5">
+                            <path d="M50 50 C35 20, 45 10, 50 10 C55 10, 65 20, 50 50 Z" fill="#FFF0F5"/>
+                            <path d="M50 50 C80 35, 90 45, 90 50 C90 55, 80 65, 50 50 Z" fill="#FFE0EC"/>
+                            <path d="M50 50 C65 80, 55 90, 50 90 C45 90, 35 80, 50 50 Z" fill="#FFF0F5"/>
+                            <path d="M50 50 C20 65, 10 55, 10 50 C10 45, 20 35, 50 50 Z" fill="#FFE0EC"/>
+                            <path d="M50 50 C25 25, 20 15, 25 12 C32 10, 42 22, 50 50 Z" fill="#FFD1DC"/>
+                            <path d="M50 50 C75 25, 80 15, 75 12 C68 10, 58 22, 50 50 Z" fill="#FFD1DC"/>
+                        </g>
+                        <circle cx="50" cy="50" r="6" fill="#D4AF37"/>
+                        <line x1="50" y1="50" x2="42" y2="38" stroke="#AA8220" stroke-width="1.5"/>
+                        <line x1="50" y1="50" x2="58" y2="38" stroke="#AA8220" stroke-width="1.5"/>
+                        <circle cx="42" cy="38" r="2" fill="#FF4D6D"/>
+                        <circle cx="58" cy="38" r="2" fill="#FF4D6D"/>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-lg font-bold text-royal-velvet">Royal Blush Lily 🌸</h3>
+                <p class="text-xs text-royal-plum/75 mt-1">Tap to bloom for my graceful <strong>Musii</strong></p>
+            </button>
+
+            <!-- Rose Card -->
+            <button onclick="bloomFlower('rose')" class="group p-6 rounded-3xl bg-white/85 backdrop-blur-sm border-2 border-blush-300 hover:border-royal-gold shadow-rose-soft hover:shadow-gold transition text-center flex flex-col items-center active:scale-95">
+                <div class="w-20 h-20 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center mb-3 group-hover:scale-110 transition">
+                    <!-- Custom SVG Velvet Rose -->
+                    <svg class="w-14 h-14" viewBox="0 0 100 100">
+                        <path d="M35 72 Q50 85 65 72 L55 58 L45 58 Z" fill="#2D6A4F"/>
+                        <circle cx="50" cy="45" r="24" fill="#E63946"/>
+                        <path d="M32 45 C32 30, 68 30, 68 45 C68 60, 32 60, 32 45 Z" fill="#FF4D6D"/>
+                        <path d="M38 43 C38 33, 62 33, 62 43 C62 53, 38 53, 38 43 Z" fill="#C9184A"/>
+                        <path d="M44 43 C44 38, 56 38, 56 43 C56 48, 44 48, 44 43 Z" fill="#800F2F"/>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-lg font-bold text-royal-velvet">Velvet Crimson Rose 🌹</h3>
+                <p class="text-xs text-royal-plum/75 mt-1">Tap to bloom for <strong>Princess Vrityy</strong></p>
+            </button>
+        </div>
+
+        <!-- Full Bouquet Action Button -->
+        <div class="text-center mb-8">
+            <button onclick="bloomFlower('bouquet')" class="px-7 py-3 rounded-full bg-gradient-to-r from-blush-400 via-pink-500 to-rose-500 text-white font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 active:scale-95 inline-flex items-center gap-2">
+                <span>💐 Present Full Royal Bouquet</span>
+            </button>
+        </div>
+
+        <!-- Interactive Bouquet Display Stage -->
+        <div id="bouquetDisplay" class="rounded-3xl bg-white/90 backdrop-blur-md border-2 border-royal-gold/60 p-6 sm:p-10 shadow-gold text-center transition-all duration-500">
+            <div id="bouquetVisual" class="flex justify-center items-center min-h-[160px] mb-4">
+                <!-- Default Full Bouquet SVG Illustration -->
+                <svg class="w-44 h-44 sm:w-52 sm:h-52 bloom-pop" viewBox="0 0 220 220">
+                    <!-- Wrapping Paper Cone -->
+                    <polygon points="55,115 165,115 110,210" fill="#FFE0EC" stroke="#D4AF37" stroke-width="2.5"/>
+                    <polygon points="75,115 145,115 110,210" fill="#FFF0F5"/>
+                    <!-- Greenery Leaves -->
+                    <ellipse cx="62" cy="100" rx="18" ry="9" transform="rotate(-35 62 100)" fill="#40916C"/>
+                    <ellipse cx="158" cy="100" rx="18" ry="9" transform="rotate(35 158 100)" fill="#40916C"/>
+                    <ellipse cx="110" cy="62" rx="10" ry="18" fill="#52B788"/>
+                    
+                    <!-- Left Sunflower -->
+                    <g transform="translate(72, 92) scale(0.55)">
+                        <circle cx="0" cy="0" r="32" fill="#FFB703"/>
+                        <circle cx="0" cy="0" r="16" fill="#5C3A21"/>
+                    </g>
+                    <!-- Right Sunflower -->
+                    <g transform="translate(148, 92) scale(0.55)">
+                        <circle cx="0" cy="0" r="32" fill="#FFB703"/>
+                        <circle cx="0" cy="0" r="16" fill="#5C3A21"/>
+                    </g>
+                    <!-- Top Center Lily -->
+                    <g transform="translate(110, 74) scale(0.62)">
+                        <path d="M0 0 C-20 -35, -5 -50, 0 -50 C5 -50, 20 -35, 0 0 Z" fill="#FFF0F5" stroke="#FF8FA3" stroke-width="2"/>
+                        <path d="M0 0 C35 -20, 50 -5, 50 0 C50 5, 35 20, 0 0 Z" fill="#FFD1DC" stroke="#FF8FA3" stroke-width="2"/>
+                        <path d="M0 0 C-35 -20, -50 -5, -50 0 C-50 5, -35 20, 0 0 Z" fill="#FFD1DC" stroke="#FF8FA3" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="7" fill="#D4AF37"/>
+                    </g>
+                    <!-- Center Roses -->
+                    <g transform="translate(92, 108)">
+                        <circle cx="0" cy="0" r="19" fill="#E63946"/>
+                        <circle cx="0" cy="0" r="12" fill="#FF4D6D"/>
+                        <circle cx="0" cy="0" r="6" fill="#A4133C"/>
+                    </g>
+                    <g transform="translate(128, 108)">
+                        <circle cx="0" cy="0" r="19" fill="#D90429"/>
+                        <circle cx="0" cy="0" r="12" fill="#FF758F"/>
+                        <circle cx="0" cy="0" r="6" fill="#800F2F"/>
+                    </g>
+                    <g transform="translate(110, 96)">
+                        <circle cx="0" cy="0" r="20" fill="#FF4D6D"/>
+                        <circle cx="0" cy="0" r="13" fill="#C9184A"/>
+                        <circle cx="0" cy="0" r="6" fill="#590D22"/>
+                    </g>
+                    <!-- Golden Ribbon Bow -->
+                    <path d="M90 155 Q110 142 130 155 Q110 168 90 155 Z" fill="#D4AF37"/>
+                    <path d="M110 155 L95 182 M110 155 L125 182" stroke="#D4AF37" stroke-width="3.5" stroke-linecap="round"/>
+                    <circle cx="110" cy="155" r="5" fill="#F7E7CE" stroke="#997118" stroke-width="1.5"/>
+                </svg>
+            </div>
+            <h3 id="bouquetTitle" class="font-serif text-2xl sm:text-3xl font-bold text-royal-velvet">
+                The Royal Trinity Bouquet 💐
+            </h3>
+            <p id="bouquetMessage" class="mt-3 text-sm sm:text-base text-royal-plum max-w-xl mx-auto leading-relaxed">
+                Sunflowers for the warmth of my cutest <span class="font-semibold text-royal-velvet">Chanaa</span>, 
+                blush lilies for the pure grace of my <span class="font-semibold text-royal-velvet">Musii</span>, 
+                and velvet roses for my endless love for <span class="font-semibold text-royal-velvet">Princess Vrityy</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== 3. 10 INTERACTIVE PHOTO FRAMES GALLERY ==================== -->
+    <section id="memory-gallery" class="py-16 sm:py-24 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-royal-goldDark font-semibold">Royal Treasure Gallery</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royal-velvet mt-1">
+                10 Golden Frames of <span class="font-script text-4xl sm:text-5xl text-royal-goldDark">Princess Vrityy</span> 📸
+            </h2>
+            <p class="text-sm sm:text-base text-royal-plum/85 max-w-xl mx-auto mt-2">
+                Tap any frame to add your favorite photo directly from your gallery, or tap the pencil icon to customize the caption!
+            </p>
+            
+            <!-- Gallery Controls -->
+            <div class="mt-5 flex flex-wrap items-center justify-center gap-3">
+                <button onclick="saveMemoriesToBrowser()" class="px-5 py-2 rounded-full bg-royal-velvet text-blush-100 border border-royal-gold text-xs sm:text-sm font-medium shadow-md hover:bg-royal-plum transition active:scale-95 flex items-center gap-1.5">
+                    <span>💾 Save Photos & Captions</span>
+                </button>
+                <button onclick="openResetModal()" class="px-4 py-2 rounded-full bg-white/80 text-royal-plum border border-blush-300 text-xs sm:text-sm font-medium hover:bg-blush-100 transition active:scale-95">
+                    ↺ Reset Frames
+                </button>
+            </div>
+        </div>
+
+        <!-- 10 Frames Responsive Grid -->
+        <div id="framesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Frames 1 to 10 will be dynamically rendered here by JS -->
+        </div>
+    </section>
+
+    <!-- ==================== 4. SECRET LOVE LETTERS (WAX-SEALED ENVELOPES) ==================== -->
+    <section id="secret-letters" class="py-16 sm:py-24 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-xs uppercase tracking-[0.2em] text-royal-goldDark font-semibold">Break the Golden Seal</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-royal-velvet mt-1">
+                Secret Letters Written for <span class="font-script text-4xl sm:text-5xl text-royal-goldDark">You</span> 💌
+            </h2>
+            <p class="text-sm sm:text-base text-royal-plum/85 max-w-lg mx-auto mt-2">
+                Four royal envelopes holding pieces of my heart—tap each wax seal to unroll your letter.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <!-- Envelope 1: Musii -->
+            <div onclick="openLetterModal(0)" class="envelope-card cursor-pointer rounded-3xl p-7 sm:p-8 shadow-rose-soft hover:shadow-gold flex flex-col items-center text-center group">
+                <div class="wax-seal w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-serif font-bold mb-4 z-10">
+                    👑
+                </div>
+                <span class="text-[11px] uppercase tracking-widest text-royal-goldDark font-semibold">Royal Scroll I</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-royal-velvet mt-1">For My Dearest Musii</h3>
+                <p class="text-xs sm:text-sm text-royal-plum/80 mt-2">
+                    "Jab bhi tum muskurati ho, lagta hai poori duniya ruk si gayi hai..."
+                </p>
+                <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-royal-goldDark group-hover:translate-x-1 transition">
+                    Tap to Break Seal & Read →
+                </span>
+            </div>
+
+            <!-- Envelope 2: Chanaa -->
+            <div onclick="openLetterModal(1)" class="envelope-card cursor-pointer rounded-3xl p-7 sm:p-8 shadow-rose-soft hover:shadow-gold flex flex-col items-center text-center group">
+                <div class="wax-seal w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-serif font-bold mb-4 z-10">
+                    🌻
+                </div>
+                <span class="text-[11px] uppercase tracking-widest text-royal-goldDark font-semibold">Royal Scroll II</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-royal-velvet mt-1">For My Cutest Chanaa</h3>
+                <p class="text-xs sm:text-sm text-royal-plum/80 mt-2">
+                    "Meri sabse pyaari, thodi si shaitaan aur sabse cute Chanaa ke naam..."
+                </p>
+                <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-royal-goldDark group-hover:translate-x-1 transition">
+                    Tap to Break Seal & Read →
+                </span>
+            </div>
+
+            <!-- Envelope 3: Princess Vrityy -->
+            <div onclick="openLetterModal(2)" class="envelope-card cursor-pointer rounded-3xl p-7 sm:p-8 shadow-rose-soft hover:shadow-gold flex flex-col items-center text-center group">
+                <div class="wax-seal w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-serif font-bold mb-4 z-10">
+                    🌹
+                </div>
+                <span class="text-[11px] uppercase tracking-widest text-royal-goldDark font-semibold">Royal Scroll III</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-royal-velvet mt-1">To Her Highness, Vrityy</h3>
+                <p class="text-xs sm:text-sm text-royal-plum/80 mt-2">
+                    "Why you will always be the only Princess ruling my heart..."
+                </p>
+                <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-royal-goldDark group-hover:translate-x-1 transition">
+                    Tap to Break Seal & Read →
+                </span>
+            </div>
+
+            <!-- Envelope 4: Our Forever Promise -->
+            <div onclick="openLetterModal(3)" class="envelope-card cursor-pointer rounded-3xl p-7 sm:p-8 shadow-rose-soft hover:shadow-gold flex flex-col items-center text-center group">
+                <div class="wax-seal w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-serif font-bold mb-4 z-10">
+                    ✨
+                </div>
+                <span class="text-[11px] uppercase tracking-widest text-royal-goldDark font-semibold">Royal Scroll IV</span>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-royal-velvet mt-1">A Secret Whisper for Tomorrow</h3>
+                <p class="text-xs sm:text-sm text-royal-plum/80 mt-2">
+                    "Har aane wale kal mein bas tumhara haath thaam kar chalna hai..."
+                </p>
+                <span class="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-royal-goldDark group-hover:translate-x-1 transition">
+                    Tap to Break Seal & Read →
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. FINAL ROYAL SURPRISE SECTION ==================== -->
+    <section class="py-16 sm:py-28 px-4 max-w-4xl mx-auto text-center">
+        <div class="rounded-[2.2rem] bg-gradient-to-b from-white/95 to-blush-100/95 border-2 border-royal-gold p-8 sm:p-14 shadow-gold relative overflow-hidden">
+            <!-- Corner Filigree Accents -->
+            <div class="absolute top-3 left-4 text-royal-gold/60 text-2xl">❧</div>
+            <div class="absolute top-3 right-4 text-royal-gold/60 text-2xl scale-x-[-1]">❧</div>
+            <div class="absolute bottom-3 left-4 text-royal-gold/60 text-2xl scale-y-[-1]">❧</div>
+            <div class="absolute bottom-3 right-4 text-royal-gold/60 text-2xl scale-[-1]">❧</div>
+
+            <span class="inline-block px-4 py-1 rounded-full bg-royal-goldLight text-royal-goldDark text-xs font-semibold uppercase tracking-widest mb-4">
+                The Final Royal Chamber
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-royal-velvet">
+                One Last Surprise for <span class="font-script text-4xl sm:text-6xl text-royal-goldDark">Princess Vrityy</span>
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-royal-plum/85 max-w-md mx-auto">
+                Unlock the Royal Treasure Box to reveal your official coronation certificate and a shower of golden wishes!
+            </p>
+
+            <div class="mt-8">
+                <button id="unlockSurpriseBtn" onclick="triggerFinalSurprise()" class="px-8 py-4 rounded-full bg-gradient-to-r from-royal-velvet via-royal-plum to-royal-velvet text-royal-goldLight border-2 border-royal-gold font-serif text-base sm:text-lg font-semibold shadow-gold-glow hover:scale-105 transition transform active:scale-95 inline-flex items-center gap-3">
+                    <span class="text-2xl">🎁</span>
+                    <span>Unlock Royal Surprise</span>
+                    <span class="text-2xl">👑</span>
+                </button>
+            </div>
+
+            <!-- Hidden Coronation Certificate Revealed on Click -->
+            <div id="coronationCard" class="hidden mt-10 pt-8 border-t border-royal-gold/40 text-center">
+                <div class="p-6 sm:p-10 rounded-3xl parchment-bg border-2 border-royal-gold shadow-inner relative">
+                    <div class="text-4xl sm:text-5xl mb-2">👑</div>
+                    <p class="text-xs uppercase tracking-[0.28em] text-royal-goldDark font-semibold">Official Royal Decree</p>
+                    <h3 class="font-script text-4xl sm:text-6xl gold-text-gradient my-2">
+                        Queen of My Heart Forever
+                    </h3>
+                    <p class="font-serif italic text-base sm:text-lg text-royal-velvet max-w-lg mx-auto mt-3 leading-relaxed">
+                        "Be it known across all stars and seasons that <strong>Princess Vrityy</strong>—my sweetest <strong>Musii</strong> and my most precious <strong>Chanaa</strong>—is hereby crowned the eternal ruler of my happiness, my dreams, and every beat of my heart."
+                    </p>
+                    <div class="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-royal-goldDark font-medium">
+                        <span>🌻 Infinite Sunshine</span>
+                        <span>•</span>
+                        <span>🌸 Purest Grace</span>
+                        <span>•</span>
+                        <span>🌹 Endless Love</span>
+                    </div>
+                    <p class="mt-6 font-script text-3xl text-royal-velvet">
+                        Happy Princess Day, Meri Jaan ❤️
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs sm:text-sm text-royal-plum/70 border-t border-royal-gold/20 bg-white/40">
+        <p>Crafted with endless love for <strong class="text-royal-velvet">Princess Vrityy 👑</strong> • Always & Forever</p>
+    </footer>
+
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- Love Letter Modal -->
+    <div id="letterModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-royal-velvet/60 backdrop-blur-sm">
+        <div class="parchment-bg w-full max-w-lg rounded-3xl border-2 border-royal-gold p-6 sm:p-9 shadow-2xl relative transform transition-all scale-95 opacity-0" id="letterModalBox">
+            <button onclick="closeLetterModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-blush-200 text-royal-velvet hover:bg-blush-300 flex items-center justify-center font-bold transition">
+                ✕
+            </button>
+            <div class="text-center mb-4">
+                <span id="modalSealIcon" class="inline-flex w-14 h-14 rounded-full wax-seal items-center justify-center text-2xl text-white mb-2">💌</span>
+                <p id="modalScrollSubtitle" class="text-xs uppercase tracking-widest text-royal-goldDark font-semibold">Royal Scroll</p>
+                <h3 id="modalLetterTitle" class="font-serif text-2xl sm:text-3xl font-bold text-royal-velvet mt-1">Letter Title</h3>
+            </div>
+            <div class="h-[1px] w-full bg-gradient-to-r from-transparent via-royal-gold to-transparent my-4"></div>
+            <div id="modalLetterBody" class="text-sm sm:text-base text-royal-velvet/90 leading-relaxed space-y-3 max-h-[55vh] overflow-y-auto pr-1 font-normal">
+                <!-- Letter content injected here -->
+            </div>
+            <div class="mt-6 text-right">
+                <p class="font-script text-3xl text-royal-goldDark">Forever Yours ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Caption Modal -->
+    <div id="captionModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-royal-velvet/60 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-md rounded-3xl border-2 border-royal-gold p-6 shadow-2xl">
+            <h3 class="font-serif text-xl font-bold text-royal-velvet mb-2">Edit Frame Caption ✍️</h3>
+            <p class="text-xs text-royal-plum/75 mb-4">Write a sweet memory title for Frame #<span id="editFrameNum">1</span></p>
+            <input id="captionInput" type="text" maxlength="65" class="w-full px-4 py-3 rounded-xl border border-royal-gold/60 bg-blush-50 text-royal-velvet text-sm focus:outline-none focus:ring-2 focus:ring-royal-gold" placeholder="Enter romantic caption...">
+            <div class="mt-5 flex justify-end gap-2.5">
+                <button onclick="closeCaptionModal()" class="px-4 py-2 rounded-full text-xs sm:text-sm font-medium text-royal-plum hover:bg-blush-100">Cancel</button>
+                <button onclick="saveEditedCaption()" class="px-5 py-2 rounded-full bg-royal-gold text-white text-xs sm:text-sm font-semibold shadow-md hover:bg-royal-goldDark">Save Caption</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Confirmation Modal (No native confirm() used!) -->
+    <div id="resetModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-royal-velvet/60 backdrop-blur-sm">
+        <div class="bg-white w-full max-w-sm rounded-3xl border-2 border-royal-gold p-6 shadow-2xl text-center">
+            <div class="text-3xl mb-2">🌸</div>
+            <h3 class="font-serif text-xl font-bold text-royal-velvet">Reset All 10 Frames?</h3>
+            <p class="text-xs sm:text-sm text-royal-plum/80 mt-2">
+                This will clear uploaded photos and restore the default romantic captions.
+            </p>
+            <div class="mt-6 flex justify-center gap-3">
+                <button onclick="closeResetModal()" class="px-5 py-2 rounded-full border border-blush-300 text-xs sm:text-sm font-medium text-royal-velvet hover:bg-blush-100">Keep Them</button>
+                <button onclick="confirmResetFrames()" class="px-5 py-2 rounded-full bg-rose-600 text-white text-xs sm:text-sm font-semibold shadow-md hover:bg-rose-700">Yes, Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        /* -----------------------------------------------------------
+           1. TWINKLING FAIRY LIGHTS INITIALIZATION
+        ----------------------------------------------------------- */
+        function initFairyLights() {
+            const container = document.getElementById('fairyLights');
+            const wire = document.createElement('div');
+            wire.className = 'fairy-wire';
+            container.appendChild(wire);
+
+            const bulbCount = window.innerWidth < 640 ? 14 : 26;
+            for (let i = 0; i < bulbCount; i++) {
+                const bulb = document.createElement('div');
+                bulb.className = 'fairy-bulb';
+                const leftPercent = (i / (bulbCount - 1)) * 96 + 2;
+                // Slight parabolic curve to match wire
+                const normalizedX = (leftPercent - 50) / 50;
+                const topPx = 14 - (normalizedX * normalizedX * 8);
+                
+                bulb.style.left = `${leftPercent}%`;
+                bulb.style.top = `${topPx}px`;
+                bulb.style.setProperty('--duration', `${1.8 + Math.random() * 1.8}s`);
+                bulb.style.setProperty('--delay', `${Math.random() * 2}s`);
+                container.appendChild(bulb);
+            }
+        }
+
+        /* -----------------------------------------------------------
+           2. FALLING PETALS, FLOWERS & GOLDEN SPARKLES CANVAS
+        ----------------------------------------------------------- */
+        const canvas = document.getElementById('petalsCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let confettiBurst = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Petal {
+            constructor() {
+                this.reset(true);
+            }
+            reset(initial = false) {
+                this.x = Math.random() * canvas.width;
+                this.y = initial ? Math.random() * canvas.height : -20;
+                this.size = 6 + Math.random() * 8;
+                this.speedY = 0.7 + Math.random() * 1.3;
+                this.speedX = -0.5 + Math.random() * 1.0;
+                this.angle = Math.random() * Math.PI * 2;
+                this.spin = -0.02 + Math.random() * 0.04;
+                this.type = Math.random() > 0.25 ? 'petal' : 'sparkle';
+                const colors = ['#FFB3C6', '#FF8FA3', '#FFD1DC', '#F7E7CE', '#E0BFB8'];
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+            }
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX + Math.sin(this.angle) * 0.4;
+                this.angle += this.spin;
+                if (this.y > canvas.height + 20) {
+                    this.reset(false);
+                }
+            }
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+                if (this.type === 'petal') {
+                    ctx.fillStyle = this.color;
+                    ctx.globalAlpha = 0.78;
+                    ctx.beginPath();
+                    ctx.moveTo(0, -this.size);
+                    ctx.bezierCurveTo(this.size, -this.size / 2, this.size, this.size / 2, 0, this.size);
+                    ctx.bezierCurveTo(-this.size, this.size / 2, -this.size, -this.size / 2, 0, -this.size);
+                    ctx.fill();
+                } else {
+                    ctx.fillStyle = '#D4AF37';
+                    ctx.globalAlpha = 0.65 + Math.sin(this.angle * 3) * 0.3;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size * 0.28, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.restore();
+            }
+        }
+
+        function initPetals() {
+            const count = window.innerWidth < 640 ? 26 : 45;
+            particles = Array.from({ length: count }, () => new Petal());
+        }
+
+        function spawnConfettiCelebration() {
+            const emojis = ['👑', '🌻', '🌸', '🌹', '✨', '💖', '💐'];
+            for (let i = 0; i < 65; i++) {
+                confettiBurst.push({
+                    x: canvas.width / 2,
+                    y: canvas.height * 0.65,
+                    vx: (Math.random() - 0.5) * 14,
+                    vy: -6 - Math.random() * 11,
+                    gravity: 0.25,
+                    size: 16 + Math.random() * 12,
+                    emoji: emojis[Math.floor(Math.random() * emojis.length)],
+                    alpha: 1
+                });
+            }
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            for (let i = confettiBurst.length - 1; i >= 0; i--) {
+                const c = confettiBurst[i];
+                c.x += c.vx;
+                c.y += c.vy;
+                c.vy += c.gravity;
+                c.alpha -= 0.008;
+                if (c.alpha <= 0) {
+                    confettiBurst.splice(i, 1);
+                    continue;
+                }
+                ctx.save();
+                ctx.globalAlpha = c.alpha;
+                ctx.font = `${c.size}px serif`;
+                ctx.fillText(c.emoji, c.x, c.y);
+                ctx.restore();
+            }
+            requestAnimationFrame(animateCanvas);
+        }
+
+        /* -----------------------------------------------------------
+           3. SYNTHESIZED ROMANTIC MUSIC BOX (WEB AUDIO API)
+        ----------------------------------------------------------- */
+        let audioCtx = null;
+        let isPlayingMusic = false;
+        let melodyInterval = null;
+
+        // Gentle fairytale music-box notes (Hz)
+        const melodyNotes = [
+            523.25, 659.25, 783.99, 1046.50, 987.77, 783.99, 659.25, 587.33,
+            698.46, 880.00, 1046.50, 880.00, 783.99, 659.25, 587.33, 523.25
+        ];
+        let noteIndex = 0;
+
+        function playMusicBoxNote(freq) {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.06, audioCtx.currentTime + 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.4);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 1.45);
+        }
+
+        function toggleRoyalMusic() {
+            const btnIcon = document.getElementById('musicIcon');
+            const btnLabel = document.getElementById('musicLabel');
+
+            if (!isPlayingMusic) {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') {
+                    audioCtx.resume();
+                }
+                isPlayingMusic = true;
+                btnIcon.textContent = '🎶';
+                btnLabel.textContent = 'Pause Melody';
+                showToast('Playing soft royal music box melody...');
+                
+                playMusicBoxNote(melodyNotes[noteIndex++ % melodyNotes.length]);
+                melodyInterval = setInterval(() => {
+                    playMusicBoxNote(melodyNotes[noteIndex++ % melodyNotes.length]);
+                }, 650);
+            } else {
+                isPlayingMusic = false;
+                btnIcon.textContent = '🎵';
+                btnLabel.textContent = 'Play Melody';
+                clearInterval(melodyInterval);
+            }
+        }
+
+        /* -----------------------------------------------------------
+           4. INTERACTIVE FLOWER GARDEN & BOUQUET LOGIC
+        ----------------------------------------------------------- */
+        const flowerData = {
+            sunflower: {
+                title: 'Golden Sunflower for My Sunshine Chanaa 🌻',
+                message: 'Just like a sunflower always turns toward the light, my eyes always search for you, my cutest Chanaa. Your laughter brings warmth, brightness, and pure joy into my every single day.',
+                svg: `<svg class="w-40 h-40 bloom-pop" viewBox="0 0 100 100">
+                        <g fill="#FFB703" stroke="#FB8500" stroke-width="1.5">
+                            <ellipse cx="50" cy="16" rx="7" ry="17"/><ellipse cx="50" cy="84" rx="7" ry="17"/>
+                            <ellipse cx="16" cy="50" rx="17" ry="7"/><ellipse cx="84" cy="50" rx="17" ry="7"/>
+                            <ellipse cx="26" cy="26" rx="7" ry="17" transform="rotate(-45 26 26)"/>
+                            <ellipse cx="74" cy="74" rx="7" ry="17" transform="rotate(-45 74 74)"/>
+                            <ellipse cx="74" cy="26" rx="7" ry="17" transform="rotate(45 74 26)"/>
+                            <ellipse cx="26" cy="74" rx="7" ry="17" transform="rotate(45 26 74)"/>
+                        </g>
+                        <circle cx="50" cy="50" r="19" fill="#5C3A21" stroke="#3D2514" stroke-width="2"/>
+                        <circle cx="44" cy="45" r="2.2" fill="#D4AF37"/><circle cx="56" cy="46" r="2.2" fill="#D4AF37"/>
+                        <circle cx="50" cy="55" r="2.2" fill="#D4AF37"/>
+                      </svg>`
+            },
+            lily: {
+                title: 'Royal Blush Lily for My Graceful Musii 🌸',
+                message: 'Soft, graceful, and effortlessly enchanting—this lily blooms for my Musii. Your kindness and gentle heart make you the truest princess this world has ever seen.',
+                svg: `<svg class="w-40 h-40 bloom-pop" viewBox="0 0 100 100">
+                        <g stroke="#FF8FA3" stroke-width="1.5">
+                            <path d="M50 50 C35 18, 45 8, 50 8 C55 8, 65 18, 50 50 Z" fill="#FFF0F5"/>
+                            <path d="M50 50 C82 35, 92 45, 92 50 C92 55, 82 65, 50 50 Z" fill="#FFE0EC"/>
+                            <path d="M50 50 C65 82, 55 92, 50 92 C45 92, 35 82, 50 50 Z" fill="#FFF0F5"/>
+                            <path d="M50 50 C18 65, 8 55, 8 50 C8 45, 18 35, 50 50 Z" fill="#FFE0EC"/>
+                            <path d="M50 50 C25 25, 20 15, 25 12 C32 10, 42 22, 50 50 Z" fill="#FFD1DC"/>
+                            <path d="M50 50 C75 25, 80 15, 75 12 C68 10, 58 22, 50 50 Z" fill="#FFD1DC"/>
+                        </g>
+                        <circle cx="50" cy="50" r="6" fill="#D4AF37"/>
+                        <circle cx="42" cy="38" r="2.5" fill="#FF4D6D"/><circle cx="58" cy="38" r="2.5" fill="#FF4D6D"/>
+                      </svg>`
+            },
+            rose: {
+                title: 'Velvet Rose for Princess Vrityy 🌹',
+                message: 'Every petal of this crimson rose holds a thousand unspoken "I love yous" for Princess Vrityy. You are the timeless romance at the center of my universe.',
+                svg: `<svg class="w-40 h-40 bloom-pop" viewBox="0 0 100 100">
+                        <path d="M35 72 Q50 85 65 72 L55 58 L45 58 Z" fill="#2D6A4F"/>
+                        <circle cx="50" cy="45" r="25" fill="#E63946"/>
+                        <path d="M31 45 C31 29, 69 29, 69 45 C69 61, 31 61, 31 45 Z" fill="#FF4D6D"/>
+                        <path d="M38 43 C38 33, 62 33, 62 43 C62 53, 38 53, 38 43 Z" fill="#C9184A"/>
+                        <path d="M44 43 C44 38, 56 38, 56 43 C56 48, 44 48, 44 43 Z" fill="#800F2F"/>
+                      </svg>`
+            },
+            bouquet: {
+                title: 'The Royal Trinity Bouquet 💐',
+                message: 'Sunflowers for the warmth of my cutest Chanaa, blush lilies for the pure grace of my Musii, and velvet roses for my endless love for Princess Vrityy.',
+                svg: document.getElementById('bouquetVisual')?.innerHTML || ''
+            }
+        };
+
+        // Store initial bouquet SVG safely on load
+        let initialBouquetSVG = '';
+
+        function bloomFlower(type) {
+            const visualEl = document.getElementById('bouquetVisual');
+            const titleEl = document.getElementById('bouquetTitle');
+            const msgEl = document.getElementById('bouquetMessage');
+
+            const selected = flowerData[type];
+            visualEl.innerHTML = type === 'bouquet' ? initialBouquetSVG : selected.svg;
+            titleEl.textContent = selected.title;
+            msgEl.textContent = selected.message;
+        }
+
+        /* -----------------------------------------------------------
+           5. 10 INTERACTIVE PHOTO FRAMES (UPLOAD, EDIT & SAVE)
+        ----------------------------------------------------------- */
+        const defaultFrames = [
+            { id: 1, caption: '1. The Day My Fairytale Began 👑', img: null },
+            { id: 2, caption: '2. My Favorite Smile in the World ✨', img: null },
+            { id: 3, caption: '3. Precious Moments with Musii 🌸', img: null },
+            { id: 4, caption: '4. My Cutest Chanaa Being Adorable 🌻', img: null },
+            { id: 5, caption: '5. Royalty in Every Glance 💫', img: null },
+            { id: 6, caption: '6. Laughter That Heals Everything 🥰', img: null },
+            { id: 7, caption: '7. Golden Hour with Princess Vrityy 🌅', img: null },
+            { id: 8, caption: '8. Little Things I Adore About You 🌹', img: null },
+            { id: 9, caption: '9. My Safe Place, My Happiness 💕', img: null },
+            { id: 10, caption: '10. Forever & Always, Meri Jaan 👑', img: null }
+        ];
+
+        let framesState = JSON.parse(JSON.stringify(defaultFrames));
+        let currentlyEditingFrameId = null;
+
+        function loadFramesFromStorage() {
+            try {
+                const saved = localStorage.getItem('vrityy_princess_frames_v1');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (Array.isArray(parsed) && parsed.length === 10) {
+                        framesState = parsed;
+                    }
+                }
+            } catch (e) {
+                console.warn('Could not load saved frames:', e);
+            }
+        }
+
+        function renderPhotoFrames() {
+            const grid = document.getElementById('framesGrid');
+            grid.innerHTML = '';
+
+            framesState.forEach((frame) => {
+                const card = document.createElement('div');
+                card.className = 'royal-frame rounded-3xl p-4 sm:p-5 flex flex-col justify-between relative group';
+
+                const imageAreaHTML = frame.img
+                    ? `<div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-blush-100 border border-royal-gold/40 cursor-pointer" onclick="triggerFileInput(${frame.id})">
+                           <img src="${frame.img}" alt="${frame.caption}" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                           <div class="absolute inset-0 bg-royal-velvet/35 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                               <span class="px-3.5 py-1.5 rounded-full bg-white/95 text-royal-velvet text-xs font-semibold shadow-md">Change Photo 📸</span>
+                           </div>
+                       </div>`
+                    : `<div onclick="triggerFileInput(${frame.id})" class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-gradient-to-br from-blush-50 via-blush-100 to-royal-goldLight/60 border-2 border-dashed border-royal-gold/70 cursor-pointer flex flex-col items-center justify-center p-5 text-center hover:bg-blush-200/50 transition">
+                           <div class="w-14 h-14 rounded-full bg-white/90 border border-royal-gold/50 shadow-sm flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition">
+                               👑
+                           </div>
+                           <p class="font-serif text-base font-semibold text-royal-velvet">Frame #${frame.id}</p>
+                           <p class="text-xs text-royal-plum/80 mt-1">Tap to upload a photo of Princess Vrityy</p>
+                           <span class="mt-3 px-3.5 py-1.5 rounded-full bg-white text-royal-goldDark border border-royal-gold/40 text-[11px] font-semibold shadow-sm">
+                               + Add Photo
+                           </span>
+                       </div>`;
+
+                card.innerHTML = `
+                    <!-- Top Crown Badge -->
+                    <div class="flex items-center justify-between mb-2.5 px-1">
+                        <span class="text-[11px] font-semibold uppercase tracking-wider text-royal-goldDark">Royal Frame 0${frame.id === 10 ? '' : ''}${frame.id}</span>
+                        <span class="text-xs text-royal-gold">✦ 👑 ✦</span>
+                    </div>
+
+                    <!-- Photo Container -->
+                    ${imageAreaHTML}
+                    <input type="file" id="fileInput_${frame.id}" accept="image/*" class="hidden" onchange="handlePhotoUpload(event, ${frame.id})">
+
+                    <!-- Caption Footer -->
+                    <div class="mt-3.5 pt-2 border-t border-royal-gold/25 flex items-center justify-between gap-2">
+                        <p class="font-serif italic text-sm sm:text-base text-royal-velvet font-medium leading-snug">
+                            ${frame.caption}
+                        </p>
+                        <button onclick="openCaptionModal(${frame.id})" class="p-2 rounded-full hover:bg-blush-200/70 text-royal-goldDark transition shrink-0" title="Edit Caption">
+                            ✏️
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function triggerFileInput(frameId) {
+            const input = document.getElementById(`fileInput_${frameId}`);
+            if (input) input.click();
+        }
+
+        function handlePhotoUpload(event, frameId) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // Compress slightly via canvas so up to 10 photos fit comfortably in localStorage!
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const maxDim = 750;
+                    let w = img.width;
+                    let h = img.height;
+                    if (w > maxDim || h > maxDim) {
+                        if (w > h) {
+                            h = Math.round((h * maxDim) / w);
+                            w = maxDim;
+                        } else {
+                            w = Math.round((w * maxDim) / h);
+                            h = maxDim;
+                        }
+                    }
+                    const tempCanvas = document.createElement('canvas');
+                    tempCanvas.width = w;
+                    tempCanvas.height = h;
+                    const tCtx = tempCanvas.getContext('2d');
+                    tCtx.drawImage(img, 0, 0, w, h);
+                    const compressedDataUrl = tempCanvas.toDataURL('image/jpeg', 0.82);
+
+                    const frameIndex = framesState.findIndex(f => f.id === frameId);
+                    if (frameIndex !== -1) {
+                        framesState[frameIndex].img = compressedDataUrl;
+                        renderPhotoFrames();
+                        showToast(`Photo added to Frame #${frameId}! ✨`);
+                    }
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveMemoriesToBrowser() {
+            try {
+                localStorage.setItem('vrityy_princess_frames_v1', JSON.stringify(framesState));
+                showToast('All photos & captions saved safely! 💾👑');
+            } catch (e) {
+                showToast('Photos are displayed! (Storage limit reached for large files)');
+            }
+        }
+
+        function openCaptionModal(frameId) {
+            currentlyEditingFrameId = frameId;
+            const frame = framesState.find(f => f.id === frameId);
+            document.getElementById('editFrameNum').textContent = frameId;
+            document.getElementById('captionInput').value = frame ? frame.caption : '';
+            const modal = document.getElementById('captionModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCaptionModal() {
+            const modal = document.getElementById('captionModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            currentlyEditingFrameId = null;
+        }
+
+        function saveEditedCaption() {
+            const newText = document.getElementById('captionInput').value.trim();
+            if (newText && currentlyEditingFrameId !== null) {
+                const idx = framesState.findIndex(f => f.id === currentlyEditingFrameId);
+                if (idx !== -1) {
+                    framesState[idx].caption = newText;
+                    renderPhotoFrames();
+                    showToast('Caption updated! ✍️');
+                }
+            }
+            closeCaptionModal();
+        }
+
+        function openResetModal() {
+            const modal = document.getElementById('resetModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeResetModal() {
+            const modal = document.getElementById('resetModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function confirmResetFrames() {
+            framesState = JSON.parse(JSON.stringify(defaultFrames));
+            localStorage.removeItem('vrityy_princess_frames_v1');
+            renderPhotoFrames();
+            closeResetModal();
+            showToast('All 10 frames reset to default 🌸');
+        }
+
+        /* -----------------------------------------------------------
+           6. SECRET LOVE LETTERS DATA & MODAL LOGIC
+        ----------------------------------------------------------- */
+        const secretLetters = [
+            {
+                icon: '👑',
+                subtitle: 'Royal Scroll I • Heart to Heart',
+                title: 'For My Dearest Musii',
+                paragraphs: [
+                    'Meri pyaari Musii,',
+                    'Kabhi-kabhi main bas chup-chaap sochta hoon ki zindagi ne mujhe kitna khoobsurat tohfa diya hai. Tumhari ek muskurahat mere poore din ki thakaan mita deti hai, aur tumhari awaaz sunte hi dil ko ek ajeeb sa sukoon milta hai.',
+                    'Tum sirf meri pasand nahi ho, Musii—tum meri aadat, meri dua aur meri sabse khoobsurat kahani ho. Happy Princess Day, meri jaan!'
+                ]
+            },
+            {
+                icon: '🌻',
+                subtitle: 'Royal Scroll II • Pure Sunshine',
+                title: 'For My Cutest Chanaa',
+                paragraphs: [
+                    'Oye meri sabse cute Chanaa,',
+                    'Tumhari woh chhoti-chhoti baatein, tumhara pyaara sa gussa, aur phir achanak se bachchon jaisi masoom hansi—yeh sab mujhe har roz tumse aur zyada pyaar karne par majboor kar deta hai.',
+                    'Chahe duniya kitni bhi badi kyun na ho, mere liye toh meri chhoti si Chanaa hi meri poori duniya hai. Hamesha aise hi khilkhilati rehna!'
+                ]
+            },
+            {
+                icon: '🌹',
+                subtitle: 'Royal Scroll III • Royal Tribute',
+                title: 'To Her Highness, Princess Vrityy',
+                paragraphs: [
+                    'Dearest Princess Vrityy,',
+                    'A true princess doesn’t need a castle made of stone—she builds a palace of warmth, grace, and love wherever she walks. And you, Vrityy, have turned my heart into your eternal kingdom.',
+                    'Today and every single day, I celebrate your elegance, your strength, and the magic you bring into my life.'
+                ]
+            },
+            {
+                icon: '✨',
+                subtitle: 'Royal Scroll IV • Eternal Promise',
+                title: 'A Secret Whisper for Tomorrow',
+                paragraphs: [
+                    'Meri Vrityy, meri Musii, meri Chanaa,',
+                    'Main waada karta hoon ki har khushi mein tumhare saath muskuraunga, aur har mushkil mein tumhari dhaal ban kar khada rahunga. Jab bhi tumhe lage ki din thoda bhaari hai, bas yaad rakhna—koi hai jo tumhe apni jaan se bhi zyada chahta hai.',
+                    'Happy Princess Day once again, my forever Queen! ❤️👑'
+                ]
+            }
+        ];
+
+        function openLetterModal(index) {
+            const letter = secretLetters[index];
+            document.getElementById('modalSealIcon').textContent = letter.icon;
+            document.getElementById('modalScrollSubtitle').textContent = letter.subtitle;
+            document.getElementById('modalLetterTitle').textContent = letter.title;
+
+            const bodyEl = document.getElementById('modalLetterBody');
+            bodyEl.innerHTML = letter.paragraphs.map(p => `<p>${p}</p>`).join('');
+
+            const modal = document.getElementById('letterModal');
+            const box = document.getElementById('letterModalBox');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                box.classList.remove('scale-95', 'opacity-0');
+                box.classList.add('scale-100', 'opacity-100');
+            }, 20);
+        }
+
+        function closeLetterModal() {
+            const modal = document.getElementById('letterModal');
+            const box = document.getElementById('letterModalBox');
+            box.classList.add('scale-95', 'opacity-0');
+            box.classList.remove('scale-100', 'opacity-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 200);
+        }
+
+        /* -----------------------------------------------------------
+           7. FINAL ROYAL SURPRISE & TOAST HELPER
+        ----------------------------------------------------------- */
+        function triggerFinalSurprise() {
+            const card = document.getElementById('coronationCard');
+            const btn = document.getElementById('unlockSurpriseBtn');
+            
+            card.classList.remove('hidden');
+            card.classList.add('bloom-pop');
+            btn.innerHTML = '<span>👑 Princess Vrityy Crowned Forever! 👑</span>';
+            
+            spawnConfettiCelebration();
+            showToast('All hail Princess Vrityy! 👑✨');
+
+            // Play celebratory chord if audioCtx exists
+            if (audioCtx) {
+                [523.25, 659.25, 783.99, 1046.50].forEach((f, idx) => {
+                    setTimeout(() => playMusicBoxNote(f), idx * 120);
+                });
+            }
+
+            setTimeout(() => {
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 150);
+        }
+
+        let toastTimer = null;
+        function showToast(msg) {
+            const banner = document.getElementById('toastBanner');
+            const text = document.getElementById('toastText');
+            text.textContent = msg;
+            banner.classList.remove('opacity-0', 'translate-y-4');
+            banner.classList.add('opacity-100', 'translate-y-0');
+
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                banner.classList.add('opacity-0', 'translate-y-4');
+                banner.classList.remove('opacity-100', 'translate-y-0');
+            }, 3000);
+        }
+
+        /* -----------------------------------------------------------
+           8. INITIALIZE EVERYTHING ON WINDOW LOAD
+        ----------------------------------------------------------- */
+        window.onload = function() {
+            initialBouquetSVG = document.getElementById('bouquetVisual').innerHTML;
+            initFairyLights();
+            initPetals();
+            animateCanvas();
+            loadFramesFromStorage();
+            renderPhotoFrames();
+        };
+    </script>
+</body>
+</html>
